@@ -132,32 +132,35 @@ Collecte (RSS + CISA)
 
 ### 1. Cloner le repo
 
-git clone https://github.com/ton-username/cy-hackt.git
-cd cy-hackt/backend
+```git clone https://github.com/ton-username/cy-hackt.git```
+```cd cy-hackt/backend```
 
 ### 2. Créer un environnement virtuel
 
-python3 -m venv venv
-source venv/bin/activate
+```python python3 -m venv venv```
+```python source venv/bin/activate```
 
 ### 3. Installer les dépendances
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 ## * 🗄️ Configuration base de données *
 
-Créer la base PostgreSQL :
+# Créer la base PostgreSQL :
 
-CREATE DATABASE cyhackt;
+```CREATE DATABASE cyhackt;```
 
-Configurer la connexion :
+## Configurer la connexion :
 
-DATABASE_URL=postgresql://postgres:password@localhost:5432/cyhackt
-⚡ Lancer l’API
+```DATABASE_URL=postgresql://postgres:password@localhost:5432/cyhackt```
+
+# ⚡ Lancer l’API
 uvicorn app.main:app --reload
-Accès API
+
+# Accès API
 http://127.0.0.1:8000
-Swagger
+
+# Swagger
 http://127.0.0.1:8000/docs
 
 ---
@@ -166,19 +169,19 @@ http://127.0.0.1:8000/docs
 
 # Ingestion des données
 
-GET /ingest
+```GET /ingest```
 
 # Articles récents
 
-GET /latest
+```GET /latest```
 
 # Menaces critiques
 
-GET /critical
+```GET /critical```
 
 # Recherche
 
-GET /search?q=ransomware
+```GET /search?q=ransomware```
 
 📈 État du projet
 ✅ Backend stable
