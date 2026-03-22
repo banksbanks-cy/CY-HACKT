@@ -36,7 +36,7 @@ L’objectif est de fournir une base de données exploitable pour un dashboard o
 ## ⚙️ Architecture
 
 
-app/
+```app/
 ├── main.py
 ├── db.py
 ├── api/
@@ -56,7 +56,7 @@ app/
 ├── utils/
 │ ├── deduplicator.py
 │ └── text_cleaner.py
-
+```
 
 ---
 
