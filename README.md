@@ -62,8 +62,9 @@ L’objectif est de fournir une base de données exploitable pour un dashboard o
 
 ## 🔄 Pipeline de traitement
 
+# Collecte (RSS + CISA)
 
-Collecte (RSS + CISA)
+```
 → Nettoyage texte
 → Filtrage (qualité + date)
 → Scoring (mots-clés + CVE)
@@ -73,7 +74,7 @@ Collecte (RSS + CISA)
 → Résumé simple
 → Stockage PostgreSQL
 → API REST
-
+```
 
 ---
 
